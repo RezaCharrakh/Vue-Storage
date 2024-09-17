@@ -14,7 +14,7 @@
         placeholder="Password"
       />
       <div class="relative w-full h-8">
-        <span class="text-gray-300 absolute right-0">Recover Password ?</span>
+        <span class="text-gray-300 absolute right-0">Recover Password !?</span>
       </div>
       <el-button @click="login" type="primary" class="w-full">Login</el-button>
       <el-divider>Continue with</el-divider>
