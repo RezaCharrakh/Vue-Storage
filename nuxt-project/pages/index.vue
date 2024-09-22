@@ -1,21 +1,31 @@
 <template>
-  <article class="prose md:prose-lg lg:prose-xl">
-    <h1>Garlic bread with cheese: What the science tells us</h1>
-    <h2>Garlic bread with cheese: What the science tells us</h2>
-    <p>
-      For years parents have espoused the health benefits of eating garlic bread
-      with cheese to their children, with the food earning such an iconic status
-      in our culture that kids will often dress up as warm, cheesy loaf for
-      Halloween.
-    </p>
-    <p>
-      But a recent study shows that the celebrated appetizer may be linked to a
-      series of rabies cases springing up around the country.
-    </p>
-    <!-- ... -->
-  </article>
+  <div>
+    <el-button @click="toggleDarkMode">
+      {{ isDarkMode ? 'Switch to Light Mode' : 'Switch to Dark Mode' }}
+    </el-button>
+    <Nuxt />
+  </div>
 </template>
 
-<script setup></script>
+<script setup>
+import { ref } from 'vue';
 
-<style scoped></style>
+// A ref to track whether dark mode is active or not
+const isDarkMode = ref(false);
+
+// Function to toggle dark mode
+const toggleDarkMode = () => {
+  isDarkMode.value = !isDarkMode.value;
+  
+  // Toggle the 'dark' class on the <html> element
+  if (isDarkMode.value) {
+    document.documentElement.classList.add('dark');
+  } else {
+    document.documentElement.classList.remove('dark');
+  }
+};
+</script>
+
+<style scoped>
+/* Add any additional styles for the button if needed */
+</style>
