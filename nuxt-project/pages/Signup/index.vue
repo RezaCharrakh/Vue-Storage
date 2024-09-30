@@ -1,11 +1,11 @@
 <template>
-  <div class="flex justify-center items-center h-screen gap-52 relative">
+  <div class="flex justify-center items-center h-screen gap-32 relative">
     <div class="absolute top-10 left-10 flex items-center gap-2">
       <img class="w-20" src="/assets/V-Cloud logo.png" alt="" />
       <h1 class="text-4xl font-bold text-[#009BA1]">V-Cloud</h1>
     </div>
     <div
-      class="flex flex-col items-center w-[700px] gap-5 relative z-10 ml-52 prose"
+      class="flex flex-col items-center w-[500px] gap-5 relative z-10 ml-52 prose"
     >
       <div>
         <h2 class="text-4xl">Sign up</h2>
